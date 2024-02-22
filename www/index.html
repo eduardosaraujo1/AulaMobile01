@@ -16,6 +16,26 @@
             document.getElementById("visor").innerHTML = result;
         }
 
+        function subtrair() {
+            num1 = document.getElementById("numero01").value;
+            num2 = document.getElementById("numero02").value;
+            result = parseInt(num1) - parseInt(num2);
+            document.getElementById("visor").innerHTML = result;
+        }
+
+        function dividir() {
+            num1 = document.getElementById("numero01").value;
+            num2 = document.getElementById("numero02").value;
+            result = parseInt(num1) / parseInt(num2);
+            document.getElementById("visor").innerHTML = result;
+        }
+        function multiplicar() {
+            num1 = document.getElementById("numero01").value;
+            num2 = document.getElementById("numero02").value;
+            result = parseInt(num1) * parseInt(num2);
+            document.getElementById("visor").innerHTML = result;
+        }
+
     </script>
 </head>
 <body>
@@ -23,6 +43,10 @@
     <h2 id="visor"></h2>
     <input type="number" placeholder="Insira o Primeiro Número" id="numero01">
     <input type="number" placeholder="Insira o Segundo Número" id="numero02">
+    <br><br>
     <input type="button" value="SOMAR" onclick="somar()">
+    <input type="button" value="SUBTRAIR" onclick="subtrair()">
+    <input type="button" value="DIVIDIR" onclick="dividir()">
+    <input type="button" value="MULTIPLICAR" onclick="multiplicar()">
 </body>
 </html>
