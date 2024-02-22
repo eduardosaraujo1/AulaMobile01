@@ -8,11 +8,21 @@
     <link rel="stylesheet" href="components/loader.css">
     <link rel="stylesheet" href="css/style.css">
     <script>
+        let num1, num2, result;
+        function somar() {
+            num1 = document.getElementById("numero01").value;
+            num2 = document.getElementById("numero02").value;
+            result = parseInt(num1) + parseInt(num2);
+            document.getElementById("visor").innerHTML = result;
+        }
+
     </script>
 </head>
 <body>
-	<br />
-    <p id="test">This is a template for Monaca app.</p>
-    <script>document.getElementById("test").innerHTML = "olá!" </script>
+	<h1>CALCULADORA</h1>
+    <h2 id="visor"></h2>
+    <input type="number" placeholder="Insira o Primeiro Número" id="numero01">
+    <input type="number" placeholder="Insira o Segundo Número" id="numero02">
+    <input type="button" value="SOMAR" onclick="somar()">
 </body>
 </html>
